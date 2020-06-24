@@ -1,0 +1,199 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  font-size: 3.1rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.toggle-btn {
+     position: fixed;
+     margin: 1.4em;
+     padding: 1em;
+     width: 40px;
+     height: 12px;
+     right: 30px;
+     z-index: 1;
+     cursor: pointer;
+}
+
+span.one {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+}
+
+span.two {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     margin-top: 12px;
+}
+
+.menu {
+     z-index: 2;
+     position: absolute;
+     background: black;
+     height: 100vh;
+     width: 100%;
+     top: -100%;
+}
+
+.data {
+  padding: 8em 0 0 2em;
+  padding-left: 300px;
+}
+
+.nav-first-item {
+  font-family: 'Amatic SC', cursive;
+  color: gray;
+  font-size: 40px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.bus-photo {
+  position: absolute;
+  right: 400px;
+  top: 130px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+a {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 7px;
+  font-size: 50px;
+}
+
+hr {
+  background-color: white;
+  display: inline-block;
+  width: 20%;
+  height: 2px;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  background-image: linear-gradient(black, darkblue 65%, blue, lightblue);
+  color: white;
+}
+
+.title-text {
+  position: absolute;
+  text-align: center;
+  letter-spacing: 20px;
+  width: 800px;
+  left: 340px;
+  top: 200px;
+}
+
+
+/* Wave Section */
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wave.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000px;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999px;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3 {
+  animation: animate 30s linear infinite;
+  z-index: 998px;
+  opacity: 0.2;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave4 {
+  animation: animate2 2s linear infinite;
+  z-index: 997px;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@media screen and (max-width:726px) {
+  hr {
+    visibility: hidden;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
