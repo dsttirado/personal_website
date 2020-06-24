@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vh;
+  height: 100vh;
+  font-family: 'Amatic SC', cursive;
+  background-image: linear-gradient(black, darkblue 50%, blue, lightblue);
+}
+
+.toggle-btn {
+     position: fixed;
+     margin: 1.4em;
+     padding: 1em;
+     width: 40px;
+     height: 12px;
+     right: 30px;
+     z-index: 1;
+     cursor: pointer;
+}
+
+span.one {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+}
+
+span.two {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     margin-top: 12px;
+}
+
+.menu {
+     z-index: 2;
+     position: absolute;
+     background: black;
+     height: 100vh;
+     width: 100%;
+     top: -100%;
+}
+
+.data {
+  padding: 8em 0 0 2em;
+}
+
+.nav-first-item {
+  font-family: 'Amatic SC', cursive;
+  color: gray;
+  font-size: 40px;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 300px;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 300px;
+}
+
+.bus-photo {
+  position: absolute;
+  right: 400px;
+  top: 130px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+a {
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 7px;
+  font-size: 50px;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  color: white;
+  overflow: scroll;
+}
+
+.cloud {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+}
+
+.cloud.cloud1 {
+  left: 170px;
+  top: 150px;
+}
+
+.cloud.cloud2 {
+  right: 600px;
+  top: 230px;
+  width: 250px;
+}
+
+.cloud.cloud3 {
+  width: 150px;
+  right: 170px;
+  top: 100px;
+}
+
+h1 {
+  color: white;
+  position: absolute;
+  font-size: 90px;
+  letter-spacing: 15px;
+  left: 20%;
+}
+
+.joke {
+  position: absolute;
+  top: 420px;
+  right: 120px;
+}
+
+button {
+  border: 3px solid white ;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+button:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(2);
+  animation: pulse 2s infinite;
+}
+
+.yoga {
+  position: absolute;
+  top: 146%;
+  height: 350px;
+  width: 350px;
+  margin-bottom: 3%;
+  animation: meditate 2s linear infinite;
+  right: 38.6%;
+}
+
+.dot {
+  height: 22px;
+  width: 140px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 190%;
+  right: 685px;
+  animation: shadow 2s linear infinite;
+
+}
+
+.tool1 {
+  background: url("../images/HTML-logo.png") no-repeat center center;
+  text-align: center;
+  background-size: 95%;
+  background-color: #663399;
+  left: 15.6%;
+  top: 164%;
+}
+
+.tool2 {
+  background: url("../images/javascript-logo.png") no-repeat center center;
+  background-size: 90%;
+  background-color: #1e90ff;
+  left: 23%;
+  top: 130%;
+}
+
+.tool3 {
+  background: url("../images/nodejs-logo.png") no-repeat center center;
+  background-size: 100%;
+  background-color: #92D050;
+  height: 160px;
+  width: 250px;
+  top: 110%;
+  right: 41.6%;
+}
+
+.tool4 {
+  background: url("../images/python-logo.png") no-repeat center center;
+  background-size: 80%;
+  background-color: #00B050;
+  right: 23%;
+  top: 130%;
+}
+
+.tool5 {
+  background: url("../images/css-logo.png") no-repeat center center;
+  background-size: 60%;
+  background-color: #ffd500;
+  right: 15.6%;
+  top: 164%;
+}
+
+
+@keyframes meditate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    width: 140px;
+  }
+
+  50% {
+    width: 100px;
+    right: 705px;
+  }
+
+  100% {
+    width: 140px;
+  }
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, .9);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+@media screen and (max-width: 1028px) {
+  .cloud1 {
+    left: 1%
+  }
+
+  .cloud2 {
+    left: 40%;
+  }
+
+  .cloud3 {
+    left: 60%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .yoga {
+    top: 143%;
+    left: 35%;
+    height: 30%;
+    width: 30%;
+  }
+
+  button {
+    height: 13%;
+    width: 13%;
+  }
+
+  .tool1 {
+    top: 150%;
+    left: 10%;
+  }
+
+  .tool2 {
+    left: 20%;
+  }
+
+  .tool3 {
+    top: 115%;
+    left: 40%;
+    height: 13%;
+    width: 20%
+  }
+
+  .tool4 {
+    right: 20%;
+  }
+
+  .tool5 {
+    top: 150%;
+    right: 10%;
+  }
+
+  .dot {
+    left: 44%;
+    width: 1px;
+    top: 171%;
+    height: 1%;
+  }
+
+  @keyframes shadow {
+    0% {
+      width: 14%;
+    }
+
+    50% {
+      width: 6%;
+      left: 46.5%;
+    }
+
+    100% {
+      width: 14%;
+    }
+  }
+
+
+
+}
